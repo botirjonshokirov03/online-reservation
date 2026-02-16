@@ -139,7 +139,7 @@ export default function Home() {
               {upcomingCeremonies.slice(0, 6).map((ceremony) => (
                 <Link
                   key={ceremony._id}
-                  href={`/app/ceremony/${ceremony._id}`}
+                  href={`/ceremony/${ceremony._id}`}
                   className="rounded-2xl overflow-hidden card-hover"
                   style={{ backgroundColor: 'var(--background)' }}
                 >

@@ -102,7 +102,7 @@ export default function AppPage() {
                                 <FiHeart className={`w-6 h-6 ${isInWishlist(ceremony._id) ? 'fill-current' : ''}`} />
                             </button>
 
-                            <Link href={`/app/ceremony/${ceremony._id}`}>
+                            <Link href={`/ceremony/${ceremony._id}`}>
                                 <div className="relative h-64">
                                     <Image
                                         src={ceremony.image || '/images/ceremony-placeholder.png'}

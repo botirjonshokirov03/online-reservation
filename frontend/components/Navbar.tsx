@@ -24,7 +24,7 @@ export default function Navbar() {
     return (
         <nav className="sticky top-0 z-50 backdrop-blur-md border-b" style={{
             backgroundColor: 'rgba(var(--background-rgb, 255, 255, 255), 0.8)',
-            borderColor: 'var(--border)'
+            borderColor: 'var(--color-border)'
         }}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
@@ -38,7 +38,7 @@ export default function Navbar() {
                                 href="/"
                                 className={`transition-colors ${pathname === '/' ? 'font-semibold' : ''
                                     }`}
-                                style={{ color: pathname === '/' ? 'var(--primary)' : 'var(--text-secondary)' }}
+                                style={{ color: pathname === '/' ? 'var(--color-primary)' : 'var(--color-text-secondary)' }}
                             >
                                 Home
                             </Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
                                 href="/app"
                                 className={`transition-colors ${pathname === '/app' ? 'font-semibold' : ''
                                     }`}
-                                style={{ color: pathname === '/app' ? 'var(--primary)' : 'var(--text-secondary)' }}
+                                style={{ color: pathname === '/app' ? 'var(--color-primary)' : 'var(--color-text-secondary)' }}
                             >
                                 Buy Tickets
                             </Link>
@@ -61,14 +61,14 @@ export default function Navbar() {
                             className="relative p-2 rounded-full hover:bg-opacity-10 transition-all"
                             style={{
                                 backgroundColor: 'transparent',
-                                color: 'var(--text-primary)'
+                                color: 'var(--color-text-primary)'
                             }}
                         >
                             <FiShoppingCart className="w-6 h-6" />
                             {cartItemsCount > 0 && (
                                 <span
                                     className="absolute -top-1 -right-1 w-5 h-5 rounded-full text-xs flex items-center justify-center text-white font-semibold"
-                                    style={{ backgroundColor: 'var(--secondary)' }}
+                                    style={{ backgroundColor: 'var(--color-secondary)' }}
                                 >
                                     {cartItemsCount}
                                 </span>
@@ -90,8 +90,8 @@ export default function Navbar() {
                                     <div
                                         className="absolute right-0 mt-2 w-48 rounded-lg shadow-lg py-2"
                                         style={{
-                                            backgroundColor: 'var(--surface)',
-                                            border: '1px solid var(--border)'
+                                            backgroundColor: 'var(--color-surface)',
+                                            border: '1px solid var(--color-border)'
                                         }}
                                     >
                                         <Link

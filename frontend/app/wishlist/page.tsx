@@ -68,7 +68,7 @@ export default function WishlistPage() {
                         </button>
 
                         <div
-                            onClick={() => router.push(`/app/ceremony/${item.ceremonyId}`)}
+                            onClick={() => router.push(`/ceremony/${item.ceremonyId}`)}
                             className="cursor-pointer"
                         >
                             <div className="relative h-64">
